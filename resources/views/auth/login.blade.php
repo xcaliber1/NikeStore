@@ -12,10 +12,11 @@
     <!-- CoreUI CSS -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
-<body class="c-app flex-row align-items-center">
+<body class="c-app flex-row  align-items-center">
 <div class="container">
     <div class="row mb-3">
         <div class="col-12 d-flex justify-content-center">
@@ -33,7 +34,7 @@
                 <div class="card-body">
                     <form id="login" method="post" action="{{ url('/login') }}">
                         @csrf
-                        <h1>Login</h1>
+                        <h1 class="text-primary">Login</h1>
                         <p class="text-muted">Sign In to your account</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -81,11 +82,6 @@
                     </form>
                 </div>
             </div>
-
-            <p class="text-center mt-5 lead">
-                Developed By
-                <a href="https://fahimanzam.netlify.app" class="font-weight-bold text-primary">Fahim Anzam Dip</a>
-            </p>
         </div>
     </div>
 </div>
